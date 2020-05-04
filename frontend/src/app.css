@@ -1,0 +1,231 @@
+.app {
+  max-width: 100%;
+  display: grid;
+  grid-template-areas:
+    "header header "
+    "bar conteudo ";
+
+  color: #6272a4;
+  letter-spacing: 0.1em;
+}
+
+.app header {
+  background-image: url("./assets/header.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 350px;
+  grid-area: header;
+  display: grid;
+  grid-template-areas: "logo pesquisa pesquisa";
+  grid-template-rows: 0;
+}
+
+header .logo {
+  background-image: url("./assets/logo.svg");
+  background-repeat: no-repeat;
+  justify-self: center;
+  align-self: center;
+  margin-top: 200px;
+  margin-left: 100px;
+  height: 161px;
+  width: 309px;
+  grid-area: logo;
+}
+
+header .pesquisa {
+  grid-area: pesquisa;
+  justify-self: left;
+  align-self: baseline;
+  margin-top: 64px;
+}
+
+header .pesquisa div {
+  margin-top: 50px;
+  color: #ffffff;
+  font-size: 24px;
+}
+
+header .pesquisa div strong {
+  margin-left: 35px;
+}
+
+header .pesquisa input {
+  padding: 5px;
+  height: 48px;
+  width: 480px;
+  margin-left: 80px;
+  margin-top: 32px;
+  border: none;
+  font-family: "Economica";
+  font-size: 26px;
+  color: black;
+}
+
+.bar {
+  grid-area: bar;
+  background-image: url("./assets/bar.svg");
+  background-repeat: no-repeat;
+  margin-top: -530px;
+  width: 232px;
+}
+
+.bar ul {
+  width: 80%;
+  color: #ffffff;
+  margin-left: 28px;
+  margin-top: 500px;
+}
+
+.bar ul li {
+  margin: 20px auto;
+  font-size: 20px;
+  padding: 5px;
+  width: 100%;
+}
+
+.bar ul li:hover {
+  cursor: pointer;
+  background-color: #6272a4;
+  border-radius: 5px;
+}
+
+.bar .anuncio {
+  background-color: #ffffff87;
+  height: 350px;
+  margin: 0 auto;
+  width: 90%;
+  text-align: center;
+
+  border-radius: 5px;
+}
+
+.bar .anuncio h1 {
+  padding-top: 160px;
+}
+
+.conteudo {
+  grid-area: conteudo;
+  display: grid;
+  margin-bottom: 32px;
+}
+
+.conteudo p {
+  margin-top: 8px;
+  line-height: 22px;
+}
+
+.conteudo .card1 {
+  /* Rectangle 1 */
+
+  width: 980px;
+  height: 264px;
+  background: #ffffff;
+  border-radius: 5px;
+  margin-top: -90px;
+  text-align: justify;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudo .card1 iframe {
+  justify-self: center;
+  align-self: center;
+  width: 420px;
+  height: 230px;
+}
+
+.conteudo .card1 div {
+  width: 90%;
+  grid-column-start: 2;
+  align-self: center;
+  justify-self: left;
+}
+
+.conteudo .card2 {
+  /* Rectangle 2 */
+
+  width: 538px;
+  height: 489px;
+  margin-top: 39px;
+  background: #ffffff;
+  border-radius: 5px;
+  text-align: justify;
+  padding: 16px;
+}
+
+.conteudo .card2 img {
+  width: 100%;
+  padding: 10px 0;
+  margin-bottom: -14px;
+}
+
+.conteudo .card2 strong {
+  font-size: 11px;
+  margin-left: 10px;
+}
+
+.conteudo .card2 p {
+  margin-top: 10px;
+}
+
+.conteudo .card3 {
+  /* Rectangle 3 */
+
+  width: 412px;
+  height: 226px;
+  margin-top: -750px;
+  margin-right: 42px;
+  background: #ffffff;
+  border-radius: 5px;
+  justify-self: right;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudo .card3 img {
+  align-self: center;
+  justify-self: center;
+  grid-column-start: 1;
+  width: 90%;
+  height: 150px;
+}
+
+.conteudo .card3 div {
+  grid-column-start: 2;
+  justify-self: center;
+  align-self: center;
+  text-align: justify;
+  width: 80%;
+}
+
+.conteudo .card4 {
+  /* Rectangle 3 */
+
+  width: 412px;
+  height: 226px;
+  margin-top: -230px;
+  margin-right: 42px;
+  background: #ffffff;
+  border-radius: 5px;
+  justify-self: right;
+  align-self: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.conteudo .card4 img {
+  align-self: center;
+  justify-self: center;
+  grid-column-start: 1;
+  width: 90%;
+  height: 150px;
+}
+
+.conteudo .card4 div {
+  grid-column-start: 2;
+  justify-self: center;
+  align-self: center;
+  text-align: justify;
+  width: 80%;
+}
